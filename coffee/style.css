@@ -1,0 +1,38 @@
+header {
+background-image:url('images/coffeebeans.jpg');
+height: 300px;}
+
+h1 span {color: cyan;
+				font-size: 57px;
+				font-family: "kaushan";}
+h1 {color: white;
+		text-align: center;
+		}
+nav {text-align: center;
+		color: white;
+		background-color: darkcyan;
+		padding: 15px;
+		margin-top: 45px;
+		word-spacing: 3em;
+		}
+
+nav {font-family: ariel;}
+
+div {line-height:.45em;}
+
+p {color:brown;
+	padding-left: 50px;
+	padding-right: 50px;}
+
+h3 {padding-left: 50px;
+	padding-right: 50px;}
+
+a {color:white;
+style:none;}
+
+footer {background-color: darkcyan;
+				color: white;
+				padding: 10px;
+				text-align: center;
+				margin-top: 50px;
+				margin-bottom: 35px;}
