@@ -19,16 +19,24 @@ h4 {font-family: helvetica;
 	font-size: 14px;
 	padding-top: 10px}
 
-li {display: inline;
+h5 {font-family: helvetica;
+		font-size: 16px;
+		line-height: 8px;}
+
+
+li {display: inline; 
 		margin-right: 10px;
 		font-family: helvetica;
-		font-style: bold;}
+		font-style: bold;
+	}
 		
 a	{text-decoration: none;
+	font-family: helvetica;
 	}
 
 a:link {color: black;} /* unvisited link */
 a:visited {color: gray} /* visited link */
 a:hover {color: pink}/* mouse over link */
 a:active {color: purple}/* selected link */
+
 
