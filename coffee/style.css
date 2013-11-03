@@ -1,21 +1,23 @@
 header {
 background-image:url('images/coffeebeans.jpg');
-height: 300px;}
+height: 300;}
 
 h1 span {color: cyan;
 				font-size: 57px;
 				font-family: kaushan script;
 			}
+			
 h1 {color: white;
 		text-align: center;
 		font-size: 30px;
+		padding-bottom: 25px;
 		}
 
 nav {text-align: center;
 		color: white;
 		background-color: darkcyan;
-		padding: 15px;
-		margin-top: 45px;
+		padding: 10px;
+		
 		word-spacing: 3em;
 		}
 
