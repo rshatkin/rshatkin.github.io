@@ -4,10 +4,13 @@ height: 300px;}
 
 h1 span {color: cyan;
 				font-size: 57px;
-				font-family: "kaushan";}
+				font-family: kaushan script;
+			}
 h1 {color: white;
 		text-align: center;
+		font-size: 30px;
 		}
+
 nav {text-align: center;
 		color: white;
 		background-color: darkcyan;
@@ -25,10 +28,11 @@ p {color:brown;
 	padding-right: 50px;}
 
 h3 {padding-left: 50px;
-	padding-right: 50px;}
+	padding-right: 50px;
+		padding-top: 40px;}
 
 a {color:white;
-style:none;}
+text-decoration:none;}
 
 footer {background-color: darkcyan;
 				color: white;
