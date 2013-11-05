@@ -44,7 +44,7 @@
 
 
 @font-face {
-    font-family: 'league_gothicregular';
+    font-family: 'league_gothic';
     src: url('fonts/leaguegothic-regular-webfont.eot');
     src: url('fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
          url('fonts/leaguegothic-regular-webfont.woff') format('woff'),
@@ -57,18 +57,20 @@
 
 
 
-h1{font-family: league gothic;
-	font-style: condensed;
-	font-size: 75px;
-	padding: 20px;
-	margin: 10px;}
+h1{font-family: league_gothic;
+	font-size: 85px;
+	margin: 5px;
+	float: left;
+	padding-bottom: 5px;
+	margin-right: 20px;}
 
-p{padding-left: 40px;
+p{padding-left: 24px;
 	padding-right: 40px;
 	font-family: helvetica;
 font-weight: normal;
 font-size: 14px;
-padding-top: 10px;}
+padding-bottom: 20px;
+}
 
 h3 {padding-left: 25px;
 	font-family: helvetica;
@@ -79,7 +81,7 @@ h3 {padding-left: 25px;
 h4 {font-family: helvetica;
 	padding-left: 25px;
 	font-size: 14px;
-	padding-top: 10px}
+	}
 
 h5 {font-family: helvetica;
 		font-size: 16px;
@@ -89,7 +91,8 @@ h5 {font-family: helvetica;
 
 ul li{list-style: none;
 			font-family: helvetica;
-			line-height: 1.5em;
+			font-style: bold;
+			font-size: 14px;
 	}
 		
 a	{text-decoration: none;
@@ -105,5 +108,24 @@ a:link {color: black;} /* unvisited link */
 a:visited {color: gray} /* visited link */
 a:hover {color: pink}/* mouse over link */
 a:active {color: purple}/* selected link */
+
+
+
+header {height: 90px;
+				padding-bottom: 10px;
+				border-bottom: 1px solid #666;
+
+		}
+
+nav {float: right;
+		text-align: right;  
+		width: 40%;
+		margin-top: 60px;}
+			
+aside {float: left;
+			width: 25%;
+			}
+section {float: left;
+				width: 75%;}
 
 
