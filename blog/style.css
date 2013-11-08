@@ -62,25 +62,28 @@ h1{font-family: league_gothic;
 	margin: 5px;
 	float: left;
 	padding-bottom: 5px;
-	margin-right: 20px;}
+	margin-right: 10px;
+	padding-left: 10px;}
 
 p{padding-left: 24px;
-	padding-right: 40px;
+	padding-right: 30px;
 	font-family: helvetica;
 font-weight: normal;
 font-size: 14px;
 padding-bottom: 20px;
+line-height: 1.3em;
 }
 
 h3 {padding-left: 25px;
-	font-family: helvetica;
-	font-size: 15px;
-	line-height: .05em;
+	font-family: league_gothic;
+	font-size: 30px;
+	line-height: 1px;
 }
 
 h4 {font-family: helvetica;
 	padding-left: 25px;
-	font-size: 14px;
+	font-size: 12px;
+	padding-top: 3px;
 	}
 
 h5 {font-family: helvetica;
@@ -91,7 +94,6 @@ h5 {font-family: helvetica;
 
 ul li{list-style: none;
 			font-family: helvetica;
-			font-style: bold;
 			font-size: 14px;
 	}
 		
@@ -102,10 +104,12 @@ a	{text-decoration: none;
  #nav li{display: inline; 
 		margin-right: 10px;
 		font-family: helvetica;
-		font-style: bold;}
+		}
+
+	li{line-height: 20px}
 
 a:link {color: black;} /* unvisited link */
-a:visited {color: gray} /* visited link */
+a:visited {color: black;} /* visited link */
 a:hover {color: pink}/* mouse over link */
 a:active {color: purple}/* selected link */
 
@@ -117,6 +121,16 @@ header {height: 90px;
 
 		}
 
+#footer {list-style: none;
+			font-family: helvetica;
+			font-size: 14px;
+			padding-left: 10px;
+			padding-top: 5px;
+			margin-top: 580px;
+			border-top: 1px solid black;
+
+			}
+
 nav {float: right;
 		text-align: right;  
 		width: 40%;
@@ -125,7 +139,10 @@ nav {float: right;
 aside {float: left;
 			width: 25%;
 			}
+
 section {float: left;
-				width: 75%;}
+				width: 75%;
+				}
+
 
 
