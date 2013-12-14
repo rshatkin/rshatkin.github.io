@@ -1,0 +1,45 @@
+<html>
+
+<head>
+	<title>RLShatkin</title>
+	<link href="style.css" rel="Stylesheet" type="text/css" />
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		
+		<script type="text/javascript">
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+
+</head>
+
+
+<body>
+	<header>
+
+		<nav>	
+				<ul id="nav">
+					<b>
+						<li> <a href="index.html">about</a> </li>
+						<li> <a href="index.html">additional projects</a> </li>
+						<li> <a href="index.html">resume</a> </li>
+					</b>
+				</ul>	
+				</nav>
+
+	</header>
+</body>
+
+</html>

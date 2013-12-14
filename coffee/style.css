@@ -5,9 +5,12 @@ body {max-width: 940px;
 			text-align: center}
 
 header {
-background-image:url('images/dream-beans.png');
+background-image:url('images/beans.jpg');
 height: 300px;
+background-repeat: no-repeat;
 }
+
+
 
 section.one{float:left;
 						width: 50%;
@@ -26,12 +29,13 @@ h1 {color: white;
 
 nav {text-align: center;
 		word-spacing: 3em;
-		padding-top: 237px;
+		margin-top: 30px;
 		font-color: #cebb99;
 		font-family: serif;
 		font-size: 18px;
+		background-color: #230b03;
+		line-height: 30px;
 		}
-
 
 
 
@@ -58,3 +62,6 @@ footer {background-color: #230b03;
 				text-align: center;
 				margin-bottom: 35px;
 				clear:both;}
+
+
+#logo {padding-top: 25px;}

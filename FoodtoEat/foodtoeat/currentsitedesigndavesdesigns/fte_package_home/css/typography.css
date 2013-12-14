@@ -1,0 +1,105 @@
+/* ===============================
+LESS Vars + Mixins
+=============================== */
+.ibfix {
+  /* fix inline-block issue for ie & moz */
+
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  /* solution via: http://foohack.com/2007/11/cross-browser-support-for-inline-block-styling/ */
+
+}
+.backfacefix {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+}
+/* --------------------------
+LESS Variables
+-------------------------- */
+/* btn colors */
+/* masthead colors */
+/* type colors */
+/* element colors */
+/* font families */
+body {
+  font-family: 'PT Sans';
+  font-size: 16px;
+}
+h1 {
+  color: #8dad99;
+  font-family: 'Varela';
+}
+h2 {
+  margin-top: 0;
+  color: #597b66;
+  font-family: 'Varela';
+}
+h3 {
+  margin-top: 0;
+}
+h4 {
+  margin-top: 0;
+  color: #8dad99;
+  font-family: 'Varela';
+}
+.h_xxl {
+  font-size: 2.8em;
+}
+.h_xl {
+  font-size: 2.23em;
+}
+.h_lg {
+  font-size: 1.8em;
+  margin-bottom: .5em;
+}
+.h_md {
+  font-size: 1.4em;
+}
+.h_sm {
+  font-size: 1.2em;
+}
+.h_xs {
+  font-size: 1em;
+}
+.h_xxs {
+  font-size: .8em;
+}
+.h_xxxs {
+  font-size: .65em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+}
+blockquote,
+h5,
+h6,
+iframe,
+label,
+p,
+pre,
+address,
+td,
+th,
+ul,
+ol,
+dl,
+dd,
+hr,
+table {
+  margin: 0;
+}
+small {
+  margin-top: 0;
+}
+p {
+  color: #53483d;
+}

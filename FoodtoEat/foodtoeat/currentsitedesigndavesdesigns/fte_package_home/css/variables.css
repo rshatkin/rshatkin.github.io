@@ -1,0 +1,26 @@
+/* ===============================
+LESS Vars + Mixins
+=============================== */
+.ibfix {
+  /* fix inline-block issue for ie & moz */
+
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  /* solution via: http://foohack.com/2007/11/cross-browser-support-for-inline-block-styling/ */
+
+}
+.backfacefix {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+}
+/* --------------------------
+LESS Variables
+-------------------------- */
+/* btn colors */
+/* masthead colors */
+/* type colors */
+/* element colors */
+/* font families */

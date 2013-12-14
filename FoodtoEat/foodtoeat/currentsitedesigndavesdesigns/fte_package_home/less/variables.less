@@ -1,0 +1,81 @@
+/* ===============================
+LESS Vars + Mixins
+=============================== */
+@disable-filters: true;
+
+.ibfix { /* fix inline-block issue for ie & moz */
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    /* solution via: http://foohack.com/2007/11/cross-browser-support-for-inline-block-styling/ */
+}
+
+.backfacefix {
+  -webkit-backface-visibility:  hidden;
+  -moz-backface-visibility   :  hidden;
+  -ms-backface-visibility    :  hidden;
+}
+
+/* --------------------------
+LESS Variables
+-------------------------- */
+@btn_xl_padding: 15px 30px;
+@btn_lg_padding: 10px;
+@btn_md_padding: 8px 15px;
+
+/* btn colors */
+@btn_default: #faf9f7;
+@btn_fb: #425f9c;
+@btn_gplus: #d84a3a;
+@btn_action: #1ac8be;
+@btn_follow: #ffe289;
+
+@search_color: #09454B;
+
+@btn_sidepanel: #fafafa;
+
+@btn_carousel: #f77985;
+
+/* masthead colors */
+@masthead_primary: #df3736;
+@masthead_selected: desaturate(darken(@masthead_primary, 25%), -15%);
+@menu_highlight_home: #fefbab;
+
+/* type colors */
+@disabled: #d8d8d8;
+@link_primary: #12a89f;
+@link_primary_hover: darken(@link_primary, 10%);
+@error: #f12109;
+
+@p_base: #53483d;
+@p_base_light: lighten(@p_base, 20%);
+@p_base_dark: darken(@p_base, 12%);
+
+@light_bg_headline: darken(@headline_main_color, 20%);
+@headline_main_color: #8dad99;
+
+@star_on: #fb4d4b;
+@star_off: @disabled;
+
+/* element colors */
+@site_bg_color: #f6f2ec;
+@difference_bg_color: #80c7e8;
+@difference_headline: #093a51;
+
+@quick_row: #ffe289;
+
+@socialbar_color: #fb4d4b;
+
+@sidepanel_color: #1ac8be;
+
+@footer_color: #2F3031;
+
+@discount_color: #126aa8;
+@tag_color: #f5f4d6;
+
+@fav_on: #fd0c50;
+@fav_off: @disabled;
+
+/* font families */
+@headline_main_family: 'Varela';

@@ -1,0 +1,730 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="ico/favicon.png">
+
+    <title>FoodtoEat // Home - Registered</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
+    <link href="css/owl.css" rel="stylesheet">
+
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic|Fredoka+One|Varela' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/foodtoeat_icons.css">
+    <link rel="stylesheet" href="css/animation.css"><!--[if IE 7]>
+    <link rel="stylesheet" href="css/foodtoeat_icons-ie7.css"><![endif]-->
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body class="home">
+    <div id="st-container" class="st-container">
+
+        <section class="st-menu st-reveal st-auth">
+                <a href="" class="user">
+                    <img src="http://uifaces.com/faces/_twitter/kolage_128.jpg" class="avatar" alt=""> Ashwin Hamal
+                </a>
+
+            <nav class="menu-user">
+                <ul>
+                    <li><a href="">Profile</a></li>
+                    <li><a href="">Account</a></li>
+                    <li><a href="">My Locations</a></li>
+                    <li><a href="">Favorites</a></li>
+                    <li><a href="">Reviews</a></li>
+                    <li><a href="">Logout</a></li>
+                </ul>
+                <p>User links and such should go here. Possible options above.</p>
+            </nav>
+        </section>
+
+        <!-- content push wrapper -->
+        <div class="st-pusher">
+            <div class="st-content">
+                <div class="st-content-inner">
+
+                    <div class="main clearfix">
+                        <div class="logo"><a href="#"><img src="img/logo-foodtoeat.png" alt="FoodtoEat"></a></div>
+                        <div id="login-panel" class="login-panel">login here</div>
+                        <div id="masthead" class="masthead row">
+                            <nav class="navbar navbar-default" role="navigation">
+                                <!-- Brand and toggle get grouped for better mobile display -->
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                                        <span class="sr-only">Menu</span>
+                                        <i class="icon-menu"></i>
+                                    </button>
+                                </div>
+
+                                <!-- Collect the nav links, forms, and other content for toggling -->
+                                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                                    <ul class="nav navbar-nav navbar-left">
+                                        <li class="active"><a href="#">About Us</a></li>
+                                        <li><a href="#">Press</a></li>
+                                        <li><a href="#">Blog</a></li>
+                                        <li><a href="#">Merchants</a></li>
+                                    </ul>
+
+                                    <ul class="nav navbar-nav navbar-right nav-logged">
+                                        <li class="column st-trigger-effects">
+                                            <span class="welcome-text">Welcome back,</span> <a class="btn-st link-st link-user" data-effect="st-reveal">Ashwin!</a>
+                                        </li>
+                                    </ul>
+                                </div><!-- /.navbar-collapse -->
+                            </nav>
+
+
+
+                            <div class="row home-search">
+                                <div class="col-md-8 col-md-offset-2 text-center">
+                                    <div class="btn-group pref-method">
+                                      <button type="button" class="btn btn-lg btn-pill btn-default active">Delivery</button>
+                                      <button type="button" class="btn btn-lg btn-pill btn-default">Pick-up</button>
+                                      <button type="button" class="btn btn-lg btn-pill btn-default">Catering</button>
+                                    </div>
+                                    <input type="hidden" id="buttonvalue"/>
+                                </div>
+
+                                <div class="finder col-sm-12 col-md-6 col-md-offset-3">
+                                    <div class="row">
+                                        <div class="search-address col-sm-9">
+                                            <div class="btn-group btn-recentloc">
+                                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                                Recent <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu" role="menu">
+                                                    <li><a href="#">123 Broadway, NY NY</a></li>
+                                                    <li><a href="#">12 Ave. of Americas NY</a></li>
+                                                    <li><a href="#">5 Rector St. NY</a></li>
+                                                    <li class="divider"></li>
+                                                    <li><a href="#">Clear recent locations</a></li>
+                                                </ul>
+                                            </div>
+
+                                            <input type="text" class="form-control input-lg" placeholder="Address, City, State or Zip" value="72 Madison Ave"></div>
+                                        <div class="search-btn col-sm-3"><button class="btn btn-action btn-lg">Search</button></div>
+                                    </div>
+
+                                    <div class="row search-options input-dark">
+                                        <div id="keywords" class="keywords col-sm-6">
+                                            <input type="text" class="form-control input-dark input-md" placeholder="What are you in the mood for? (sushi, pasta, italian)" value="Indian">
+
+                                            <div class="keyword-results dropdown-menu">
+                                                <ul class="list-keywords">
+                                                    <li class="list-head">Add Keyword (Indian)</li>
+                                                    <li class="list-subhead">Cuisine</li>
+                                                    <li><i class="icon-tag"></i> <a href="">Indian</a></li>
+                                                    <li><i class="icon-tag"></i> <a href="">Indian</a></li>
+                                                    <li><i class="icon-tag"></i> <a href="">Indian</a></li>
+                                                </ul>
+
+                                                <div class="list-subhead">Restaurants around me:</div>
+                                                <ul class="list-merchants">
+                                                    <li class="merchant col-md-4">
+                                                        <a href="#"><img src="img/temp-merchant-logo.png" alt="" class="img-responsive"></a>
+                                                        <a href="" class="link-merchant">
+                                                            <span>Merchant Name</span>
+                                                        </a>
+                                                        <ul class="rating pull-left">
+                                                            <li class="star-on"><i class="icon-star-1"></i></li>
+                                                            <li class="star-on"><i class="icon-star-1"></i></li>
+                                                            <li class="star-on"><i class="icon-star-1"></i></li>
+                                                            <li class="star-off"><i class="icon-star-1"></i></li>
+                                                            <li class="star-off"><i class="icon-star-1"></i></li>
+                                                        </ul>
+
+                                                        <div class="pricing pull-right">$$$$</div>
+                                                    </li>
+
+                                                    <li class="merchant col-md-4">
+                                                        <a href="#"><img src="img/temp-merchant-logo.png" alt="" class="img-responsive"></a>
+                                                        <a href="" class="link-merchant">
+                                                            <span>Merchant Name</span>
+                                                        </a>
+                                                        <ul class="rating pull-left">
+                                                            <li class="star-on"><i class="icon-star-1"></i></li>
+                                                            <li class="star-on"><i class="icon-star-1"></i></li>
+                                                            <li class="star-on"><i class="icon-star-1"></i></li>
+                                                            <li class="star-off"><i class="icon-star-1"></i></li>
+                                                            <li class="star-off"><i class="icon-star-1"></i></li>
+                                                        </ul>
+
+                                                        <div class="pricing pull-right">$$$$</div>
+                                                    </li>
+
+                                                    <li class="merchant col-md-4">
+                                                        <a href="#"><img src="img/temp-merchant-logo.png" alt="" class="img-responsive"></a>
+                                                        <a href="" class="link-merchant">
+                                                            <span>Merchant Name</span>
+                                                        </a>
+                                                        <ul class="rating pull-left">
+                                                            <li class="star-on"><i class="icon-star-1"></i></li>
+                                                            <li class="star-on"><i class="icon-star-1"></i></li>
+                                                            <li class="star-on"><i class="icon-star-1"></i></li>
+                                                            <li class="star-off"><i class="icon-star-1"></i></li>
+                                                            <li class="star-off"><i class="icon-star-1"></i></li>
+                                                        </ul>
+
+                                                        <div class="pricing pull-right">$$$$</div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-3 form-inline">
+                                            <div class="checkbox">
+                                                <label data-toggle="tooltip" title="Include Food trucks - Choose pick-up for more results as most trucks don't deliver." class="tooltips"><input type="checkbox" checked> <i class="icon-truck"></i></label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label data-toggle="tooltip" title="Include Restaurants" class="tooltips"><input type="checkbox" checked> <i class="icon-food"></i></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- /masthead -->
+
+
+                        <section class="quick quick-friends row">
+                            <div class="container">
+                                <div class="quick-following col-md-4">
+                                    <header class="section-head">
+                                        <h2 class="h_md pull-left">Following</h2>
+                                        <a href="" class="btn btn-default btn-all pull-right">View all</a>
+                                        <div class="clearfix"></div>
+                                    </header>
+
+                                    <ul class="grid-friends row">
+                                        <li class="col-xs-3">
+                                            <a data-toggle="modal" href="#user-info">
+                                                <img src="http://uifaces.com/faces/_twitter/iljamiskov_128.jpg" class="avatar img-responsive tooltips" alt="" data-toggle="tooltip" title="Rihanna"> 
+                                            </a>
+                                        </li>
+                                        <li class="col-xs-3">
+                                            <a href="">
+                                                <img src="http://uifaces.com/faces/_twitter/cacestgang_128.jpg" class="avatar img-responsive tooltips" alt="" data-toggle="tooltip" title="Zooey Deschanel">
+                                            </a>
+                                        </li>
+                                        <li class="col-xs-3">
+                                            <a href="">
+                                                <img src="http://uifaces.com/faces/_twitter/michalva_128.jpg" class="avatar img-responsive tooltips" alt="" data-toggle="tooltip" title="Gustavo Fring">
+                                            </a>
+                                        </li>
+                                        <li class="col-xs-3">
+                                            <a href="">
+                                                <img src="http://uifaces.com/faces/_twitter/NashVail_128.jpg" class="avatar img-responsive tooltips" alt="" data-toggle="tooltip" title="Obi Wan Kenobi">
+                                            </a>
+                                        </li>
+                                        <li class="col-xs-3">
+                                            <a href="">
+                                                <img src="http://uifaces.com/faces/_twitter/cibawoman_128.jpg" class="avatar img-responsive tooltips" alt="" data-toggle="tooltip" title="Leighton Meester">
+                                            </a>
+                                        </li>
+                                        <li class="col-xs-3">
+                                            <a href="">
+                                                <img src="http://uifaces.com/faces/_twitter/brianmacco_128.jpg" class="avatar img-responsive tooltips" alt="" data-toggle="tooltip" title="Rick James">
+                                            </a>
+                                        </li>
+                                        <li class="col-xs-3">
+                                            <a href="">
+                                                <img src="http://uifaces.com/faces/_twitter/kolage_128.jpg" class="avatar img-responsive tooltips" alt="" data-toggle="tooltip" title="Walter White">
+                                            </a>
+                                        </li>
+                                        <li class="col-xs-3">
+                                            <a href="">
+                                                <img src="http://uifaces.com/faces/_twitter/motherfuton_128.jpg" class="avatar img-responsive tooltips" alt="" data-toggle="tooltip" title="Drake">
+                                            </a>
+                                        </li>
+                                        <li class="col-xs-3">
+                                            <a href="">
+                                                <img src="http://uifaces.com/faces/_twitter/kirkouimet_128.jpg" class="avatar img-responsive tooltips" alt="" data-toggle="tooltip" title="Kanye West">
+                                            </a>
+                                        </li>
+                                        <li class="col-xs-3">
+                                            <a href="">
+                                                <img src="http://uifaces.com/faces/_twitter/fffabs_128.jpg" class="avatar img-responsive tooltips" alt="" data-toggle="tooltip" title="James Dean">
+                                            </a>
+                                        </li>
+                                        <li class="col-xs-3">
+                                            <a href="">
+                                                <img src="http://uifaces.com/faces/_twitter/prekesh_128.jpg" class="avatar img-responsive tooltips" alt="" data-toggle="tooltip" title="Kobe Bryant">
+                                            </a>
+                                        </li>
+                                        <li class="col-xs-3">
+                                            <a href="">
+                                                <img src="http://uifaces.com/faces/_twitter/brianmacco_128.jpg" class="avatar img-responsive tooltips" alt="" data-toggle="tooltip" title="Rick James">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="quick-follower col-md-4">
+                                    <header class="section-head">
+                                        <h2 class="h_md pull-left">Followers</h2>
+                                        <a href="" class="btn btn-default btn-all pull-right">View all</a>
+                                        <div class="clearfix"></div>
+                                    </header>
+
+                                    <ul class="grid-friends row">
+                                        <li class="col-xs-3">
+                                            <a href="">
+                                                <img src="http://uifaces.com/faces/_twitter/kolage_128.jpg" class="avatar img-responsive tooltips" alt="" data-toggle="tooltip" title="Walter White">
+                                            </a>
+                                        </li>
+                                        <li class="col-xs-3">
+                                            <a href="">
+                                                <img src="http://uifaces.com/faces/_twitter/motherfuton_128.jpg" class="avatar img-responsive tooltips" alt="" data-toggle="tooltip" title="Drake">
+                                            </a>
+                                        </li>
+                                        <li class="col-xs-3">
+                                            <a href="">
+                                                <img src="http://uifaces.com/faces/_twitter/kirkouimet_128.jpg" class="avatar img-responsive tooltips" alt="" data-toggle="tooltip" title="Kanye West">
+                                            </a>
+                                        </li>
+                                        <li class="col-xs-3">
+                                            <a href="">
+                                                <img src="http://uifaces.com/faces/_twitter/fffabs_128.jpg" class="avatar img-responsive tooltips" alt="" data-toggle="tooltip" title="James Dean">
+                                            </a>
+                                        </li>
+                                        <li class="col-xs-3">
+                                            <a href="">
+                                                <img src="http://uifaces.com/faces/_twitter/prekesh_128.jpg" class="avatar img-responsive tooltips" alt="" data-toggle="tooltip" title="Kobe Bryant">
+                                            </a>
+                                        </li>
+                                        <li class="col-xs-3">
+                                            <a href="">
+                                                <img src="http://uifaces.com/faces/_twitter/owlfurty_128.jpg" class="avatar img-responsive tooltips" alt="" data-toggle="tooltip" title="Dr. Dre">
+                                            </a>
+                                        </li>
+                                        <li class="col-xs-3">
+                                            <a href="">
+                                                <img src="http://uifaces.com/faces/_twitter/iljamiskov_128.jpg" class="avatar img-responsive tooltips" alt="" data-toggle="tooltip" title="Rihanna">
+                                            </a>
+                                        </li>
+                                        <li class="col-xs-3">
+                                            <a href="">
+                                                <img src="http://uifaces.com/faces/_twitter/cacestgang_128.jpg" class="avatar img-responsive tooltips" alt="" data-toggle="tooltip" title="Zooey Deschanel">
+                                            </a>
+                                        </li>
+                                        <li class="col-xs-3">
+                                            <a href="">
+                                                <img src="http://uifaces.com/faces/_twitter/michalva_128.jpg" class="avatar img-responsive tooltips" alt="" data-toggle="tooltip" title="Gustavo Fring">
+                                            </a>
+                                        </li>
+                                        <li class="col-xs-3">
+                                            <a href="">
+                                                <img src="http://uifaces.com/faces/_twitter/NashVail_128.jpg" class="avatar img-responsive tooltips" alt="" data-toggle="tooltip" title="Obi Wan Kenobi">
+                                            </a>
+                                        </li>
+                                        <li class="col-xs-3">
+                                            <a href="">
+                                                <img src="http://uifaces.com/faces/_twitter/cibawoman_128.jpg" class="avatar img-responsive tooltips" alt="" data-toggle="tooltip" title="Leighton Meester">
+                                            </a>
+                                        </li>
+                                        <li class="col-xs-3">
+                                            <a href="">
+                                                <img src="http://uifaces.com/faces/_twitter/brianmacco_128.jpg" class="avatar img-responsive tooltips" alt="" data-toggle="tooltip" title="Rick James">
+                                            </a>
+                                        </li>
+                                        <!-- <li class="col-xs-3">
+                                            <a href="" class="friends-add">
+                                                <span>+</span>
+                                            </a>
+                                        </li> -->
+                                    </ul>
+                                </div>
+
+                                <div class="quick-follower-order col-sm-12 col-md-4">
+                                    <header class="section-head">
+                                        <h2 class="h_md pull-left">Recent Activity</h2>
+                                        <a href="" class="btn btn-default btn-all pull-right">View all</a>
+                                        <div class="clearfix"></div>
+                                    </header>
+
+                                    <ul class="list-friends">
+                                        <li>
+                                            <div class="col-xs-2">
+                                                <a href=""><img src="http://uifaces.com/faces/_twitter/kolage_128.jpg" class="avatar img-responsive tooltips" alt="" data-toggle="tooltip" data-placement="right" title="Jack Johnson"></a>
+                                            </div>
+                                            <div class="col-xs-10">
+                                                <div class="activity-detail"><i class="icon-food icon-role"></i> Recently ordered from</div>
+                                                <a href=""><strong>Los Pollos Hermanos</strong></a><br>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </li>
+                                        <li>
+                                            <div class="col-xs-2">
+                                                <a href=""><img src="http://uifaces.com/faces/_twitter/caldhela_128.jpg" class="avatar img-responsive tooltips" alt="" data-toggle="tooltip" data-placement="right" title="Miley Cyrus"></a>
+                                            </div>
+                                            <div class="col-xs-10">
+                                                <div class="activity-detail">
+                                                    <i class="icon-star-1 icon-role"></i> Left a 
+                                                    <ul class="rating">
+                                                        <li class="star-on"><i class="icon-star-1"></i></li>
+                                                        <li class="star-on"><i class="icon-star-1"></i></li>
+                                                        <li class="star-on"><i class="icon-star-1"></i></li>
+                                                        <li class="star-off"><i class="icon-star-1"></i></li>
+                                                        <li class="star-off"><i class="icon-star-1"></i></li>
+                                                    </ul>review for
+                                                </div>
+                                                <a href=""><strong>Los Pollos Hermanos</strong></a><br>
+
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </li>
+                                        <li>
+                                            <div class="col-xs-2">
+                                                <a href=""><img src="http://uifaces.com/faces/_twitter/BeStrangers_128.jpg" class="avatar img-responsive tooltips" alt="" data-toggle="tooltip" data-placement="right" title="Lana Del Ray"></a>
+                                            </div>
+                                            <div class="col-xs-10">
+                                                <div class="activity-detail"><i class="icon-users icon-role"></i> Created a group order for</div>
+                                                <a href=""><strong>Los Pollos Hermanos</strong></a><br>
+
+                                                <a href="" class="btn btn-primary btn-grouporder pull-right tooltips" data-toggle="tooltip" data-placement="left" title="Join this order"><i class="icon-users"></i> Join order</a>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </li>
+                                        <li>
+                                            <div class="col-xs-2">
+                                                <a href=""><img src="http://uifaces.com/faces/_twitter/timur_carpeev_128.jpg" class="avatar img-responsive tooltips" alt="" data-toggle="tooltip" data-placement="right" title="Calvin Harris"></a>
+                                            </div>
+                                            <div class="col-xs-10">
+                                                <div class="activity-detail"><i class="icon-users icon-role"></i> Joined a group order for</div>
+                                                <a href=""><strong>Los Pollos Hermanos</strong></a><br>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                            <div class="clearfix"></div>
+                                        </li>
+                                        <li>
+                                            <div class="col-xs-2">
+                                                <a href=""><img src="http://uifaces.com/faces/sn_elane_128.jpg" class="avatar img-responsive tooltips" alt="" data-toggle="tooltip" data-placement="right" title="Luke Bryan"></a>
+                                            </div>
+                                            <div class="col-xs-10">
+                                                <div class="activity-detail"><i class="icon-plus icon-role"></i> Started following</div>
+                                                <a href=""><img src="http://uifaces.com/faces/_twitter/timur_carpeev_128.jpg" class="avatar-sm tooltips" alt=""></a>
+                                                <a href=""><strong>Dr. Seuss</strong></a><br>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </li>
+                                        <li>
+                                            <div class="col-xs-2">
+                                                <a href=""><img src="http://uifaces.com/faces/sn_jerry_128.jpg" class="avatar img-responsive tooltips" alt="" data-toggle="tooltip" data-placement="right" title="Big Bird"></a>
+                                            </div>
+                                            <div class="col-xs-10">
+                                                <div class="activity-detail"><i class="icon-food icon-role"></i> Recently ordered from</div>
+                                                <a href=""><strong>Los Pollos Hermanos</strong></a><br>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+
+
+
+
+
+
+
+
+
+                        <section class="follow-foodtoeat row">
+                            <span>Dont’ be a stranger! Follow us on</span>
+                            <a href=""><i class="icon-facebook"></i></a>
+                            <a href=""><i class="icon-twitter"></i></a>
+                            <a href=""><i class="icon-gplus"></i></a>
+                            <a href=""><i class="icon-instagram"></i></a>
+                        </section>
+
+                        <section class="featured-in">
+                            <h2 class="text-center">As Featured in</h2>
+                            <ul class="list-logos">
+                                <li><a href=""><img src="img/logo-under30.png" alt="" class="img-responsive"></a></li>
+                                <li><a href=""><img src="img/logo-forbes.png" alt="" class="img-responsive"></a></li>
+                                <li><a href=""><img src="img/logo-fastco.png" alt="" class="img-responsive"></a></li>
+                                <li><a href=""><img src="img/logo-betabeat.png" alt="" class="img-responsive"></a></li>
+                                <li><a href=""><img src="img/logo-thrillist.png" alt="" class="img-responsive"></a></li>
+                            </ul>
+                        </section>
+
+                        <footer class="footer row">
+                            <div class="container">
+                                <div class="col-xs-4 col-sm-3">
+                                    <header class="section-head">
+                                        <h4 class="h_md">Company</h4>
+                                        <ul class="foot-links">
+                                            <li><a href="">About Us</a></li>
+                                            <li><a href="">Corporate Solutions</a></li>
+                                            <li><a href="">Careers</a></li>
+                                            <li><a href="">Blog</a></li>
+                                        </ul>
+                                    </header>
+                                </div>
+                                <div class="col-xs-4 col-sm-3">
+                                    <header class="section-head">
+                                        <h4 class="h_md">Support</h4>
+                                        <ul class="foot-links">
+                                            <li><a href="">Merchants</a></li>
+                                            <li><a href="">Contact Us</a></li>
+                                            <li><a href="">FAQs</a></li>
+                                        </ul>
+                                    </header>
+                                </div>
+                                <div class="col-xs-4 col-sm-3">
+                                    <header class="section-head">
+                                        <h4 class="h_md">Social</h4>
+                                        <ul class="foot-links">
+                                            <li><a href="">Facebook</a></li>
+                                            <li><a href="">Twitter</a></li>
+                                            <li><a href="">Google+</a></li>
+                                            <li><a href="">Instagram</a></li>
+                                        </ul>
+                                    </header>
+                                </div>
+                                
+                                <div class="visible-xs clearfix"></div>
+
+                                <div class="col-sm-3">
+                                    <div class="signoff">
+                                        <a href="#"><img src="img/logo-foodtoeat.png" class="logo pull-right" alt="FoodtoEat"></a>
+                                        <div class="clearfix"></div>
+                                        <a href="" class="links-legal">Terms of Use</a> <a href="" class="links-legal">Privacy Policy</a>
+                                        <p class="copyright">&copy; FoodtoEat.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </footer>
+
+                    </div><!-- /main -->
+                </div><!-- /st-content-inner -->
+            </div><!-- /st-content -->
+        </div><!-- /st-pusher -->
+    </div><!-- /st-container -->
+
+
+
+    <!-- Modal Email Invitations -->
+    <div id="user-info" class="modal user-info fade" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="icon-cancel"></i></button>
+            </div>
+
+          <div class="modal-body row">
+            <div class="col-xs-4 col-sm-2">
+                
+                <img src="http://uifaces.com/faces/_twitter/iljamiskov_128.jpg" class="avatar img-responsive" alt="">
+            </div>
+            <div class="col-xs-8 col-sm-8 user-detail">
+                <h3 class="h_xs">Rihanna</h3>
+                <p class="h_xxs member-since">Member since May 2012</p>
+                <p>This is a status message!</p>
+            </div>
+            <div class="col-xs-2 visible-xs"></div>
+            <div class="col-xs-10 col-sm-2 user-actions">
+                <a href="" class="btn btn-follow">Follow</a>
+            </div>
+            
+
+            <ul class="list-friends">
+                <li>
+                    <div class="col-xs-12">
+                        <div class="activity-detail"><i class="icon-food icon-role"></i> Recently ordered from</div>
+                        <a href=""><strong>Los Pollos Hermanos</strong></a><br>
+                    </div>
+                    <div class="clearfix"></div>
+                </li>
+                <li>
+                    <div class="col-xs-12">
+                        <div class="activity-detail">
+                            <i class="icon-star-1 icon-role"></i> Left a 
+                            <ul class="rating">
+                                <li class="star-on"><i class="icon-star-1"></i></li>
+                                <li class="star-on"><i class="icon-star-1"></i></li>
+                                <li class="star-on"><i class="icon-star-1"></i></li>
+                                <li class="star-off"><i class="icon-star-1"></i></li>
+                                <li class="star-off"><i class="icon-star-1"></i></li>
+                            </ul>review for
+                        </div>
+                        <a href=""><strong>Los Pollos Hermanos</strong></a><br>
+
+                    </div>
+                    <div class="clearfix"></div>
+                </li>
+                <li>
+                    <div class="col-xs-12">
+                        <div class="activity-detail"><i class="icon-users icon-role"></i> Created a group order for</div>
+                        <a href=""><strong>Los Pollos Hermanos</strong></a><br>
+
+                        <a href="" class="btn btn-primary btn-grouporder pull-right tooltips" data-toggle="tooltip" data-placement="left" title="Join this order"><i class="icon-users"></i> Join order</a>
+                    </div>
+                    <div class="clearfix"></div>
+                </li>
+                <li>
+                    <div class="col-xs-12">
+                        <div class="activity-detail"><i class="icon-users icon-role"></i> Joined a group order for</div>
+                        <a href=""><strong>Los Pollos Hermanos</strong></a><br>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="clearfix"></div>
+                </li>
+                <li>
+                    <div class="col-xs-12">
+                        <div class="activity-detail"><i class="icon-plus icon-role"></i> Started following</div>
+                        <a href=""><img src="http://uifaces.com/faces/_twitter/timur_carpeev_128.jpg" class="avatar-sm tooltips" alt=""></a>
+                        <a href=""><strong>Dr. Seuss</strong></a><br>
+                    </div>
+                    <div class="clearfix"></div>
+                </li>
+                <li>
+                    <div class="col-xs-12">
+                        <div class="activity-detail"><i class="icon-food icon-role"></i> Recently ordered from</div>
+                        <a href=""><strong>Los Pollos Hermanos</strong></a><br>
+                    </div>
+                    <div class="clearfix"></div>
+                </li>
+            </ul>
+          </div>
+
+        
+
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <!-- Modal Facebook -->
+    <div id="modal-facebook" class="modal modal-social fade" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="icon-cancel"></i></button>
+            <h4 class="h_md text-center">Your Facebook Friends on FoodtoEat!</h4>
+          </div>
+
+          <ul class="list-friends">
+              <li class="col-sm-6">
+                <div class="col-xs-3">
+                   <a href=""><img src="http://uifaces.com/faces/_twitter/kolage_128.jpg" class="avatar" alt=""></a> 
+                </div>
+                <div class="col-xs-8">
+                    <h3 class="h_xxs">Johnny Rocket</h3>
+                    <a href="" class="btn btn-follow">Follow</a>
+                </div>
+              </li>
+
+              <li class="col-sm-6">
+                <div class="col-xs-3">
+                   <a href=""><img src="http://uifaces.com/faces/_twitter/kolage_128.jpg" class="avatar" alt=""></a> 
+                </div>
+                <div class="col-xs-8">
+                    <h3 class="h_xxs">Johnny Rocket</h3>
+                    <a href="" class="btn btn-follow">Follow</a>
+                </div>
+              </li>
+
+              <li class="col-sm-6">
+                <div class="col-xs-3">
+                   <a href=""><img src="http://uifaces.com/faces/_twitter/kolage_128.jpg" class="avatar" alt=""></a> 
+                </div>
+                <div class="col-xs-8">
+                    <h3 class="h_xxs">Johnny Rocket</h3>
+                    <a href="" class="btn btn-follow">Follow</a>
+                </div>
+              </li>
+
+              <li class="col-sm-6">
+                <div class="col-xs-3">
+                   <a href=""><img src="http://uifaces.com/faces/_twitter/kolage_128.jpg" class="avatar" alt=""></a> 
+                </div>
+                <div class="col-xs-8">
+                    <h3 class="h_xxs">Johnny Rocket</h3>
+                    <a href="" class="btn btn-default">Unfollow</a>
+                </div>
+              </li>
+
+              <li class="col-sm-6">
+                <div class="col-xs-3">
+                   <a href=""><img src="http://uifaces.com/faces/_twitter/kolage_128.jpg" class="avatar" alt=""></a> 
+                </div>
+                <div class="col-xs-8">
+                    <h3 class="h_xxs">Johnny Rocket</h3>
+                    <a href="" class="btn btn-fb"><i class="icon-plus"></i> Invite</a>
+                </div>
+              </li>
+
+              <li class="col-sm-6">
+                <div class="col-xs-3">
+                   <a href=""><img src="http://uifaces.com/faces/_twitter/kolage_128.jpg" class="avatar" alt=""></a> 
+                </div>
+                <div class="col-xs-8">
+                    <h3 class="h_xxs">Johnny Rocket</h3>
+                    <a href="" class="btn btn-fb"><i class="icon-cancel"></i> Uninvite</a>
+                </div>
+              </li>
+          </ul>
+
+          <div class="modal-footer">            
+            <button type="button" class="btn btn-default text-right" data-dismiss="modal">Cancel</button>
+            <a href="" class="btn btn-action text-right">Submit</a>
+
+            <div class="clearfix"></div>
+          </div>
+
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+
+
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/sidebarEffects.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            //BS3 tooltips
+            $('.tooltips').tooltip();
+
+            //masthead bg image
+            $('#masthead').backstretch('http://lorempixel.com/1024/768/food', {speed: 500});
+
+
+            //for demo purpose
+            $('#keywords input[type="text"]').bind('blur', function() {
+                $('#keywords .keyword-results').css('display', 'none');
+            });
+
+            $('#keywords input[type="text"]').focus('blur', function() {
+                $('#keywords .keyword-results').css('display', 'block');
+            });
+
+            $("#orders-active").owlCarousel({
+                pagination: false,
+                navigation: true,
+                navigationText: ['<i class="icon-angle-left"></i>','<i class="icon-angle-right"></i>'],
+                slideSpeed : 300,
+                singleItem: false,
+                paginationSpeed : 400
+            });
+
+        });
+    </script>
+  </body>
+</html>

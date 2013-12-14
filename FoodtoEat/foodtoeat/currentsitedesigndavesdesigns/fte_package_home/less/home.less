@@ -1,0 +1,321 @@
+@import "clearless/all";
+@import "variables";
+@import "typography";
+
+/* --------------------------
+Masthead
+-------------------------- */
+.home .masthead {
+    min-height: 400px;
+}
+
+
+
+
+/* --------------------------
+Content - Guest
+-------------------------- */
+.why-foodtoeat {
+    background: #fefcf8;
+    padding: 25px;
+    text-align: center;
+}
+
+.btn-why-foodtoeat {
+    margin: -60px 0 50px 0 ;
+    border: 3px solid @masthead_primary;
+    padding: 15px 20px 15px 10px;
+}
+
+.btn-why-foodtoeat:hover {
+    border: 3px solid lighten(@masthead_primary, 20%);
+    background: #fff;
+}
+
+.btn-why-foodtoeat i {
+    .border-radius(30px);
+    color: #fff691;
+    background: @masthead_primary;
+    padding: 7px 8px;
+    text-align: center;
+}
+
+.btn-why-foodtoeat i:before { margin: 0; }
+
+.why-foodtoeat .col-sm-4 img {
+    margin-bottom: 10px;
+}
+
+
+.popular-by-you .section-head {
+    padding: 20px 0;
+}
+
+
+
+
+
+/* --------------------------
+Follow / Friends
+-------------------------- */
+.quick-friends {
+    background: @quick_row;
+    padding-bottom: 30px;
+}
+
+.quick-friends h2 { color: darken(@quick_row, 40%); }
+
+.quick-friends .well {
+    min-height: 130px;
+    background: #fafafa;
+    background: rgba(255,255,255,.6);
+    border: 1px solid darken(@quick_row, 8%);
+    .box-shadow(none);
+}
+
+.quick-friends .well .btn {
+    margin-top: 10px;
+    font-weight: normal;
+}
+
+.list-friends,
+.grid-friends {
+    padding: 0;
+    list-style-type: none;
+    min-width: 100%;
+}
+
+.list-friends {
+    .border-radius(3px);
+    max-height: 268px;
+    overflow: auto;
+}
+
+.list-friends > li {
+    #gradient > .vertical(#fefefe, #fdfdfd);
+    .transition( all .15s ease-in-out );
+    padding: 10px;
+    position: relative;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #f0f0f0;
+    text-decoration: none;
+}
+
+.list-friends > li:hover {
+    background: #eefbfa;
+    border-top: 1px solid #f6fffe;
+    border-bottom: 1px solid #e6f4f3;
+}
+
+.list-friends > li:hover .btn-grouporder,
+.row-merchants .item:hover .btn-grouporder {
+    opacity: 1;
+}
+
+.list-friends .col-xs-2 { padding: 0; }
+
+
+.list-friends h4 {
+    color: @link_primary;
+    font-size: 'Open Sans';
+    margin-bottom: 0;
+}
+
+.list-friends .btn-grouporder {
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+.list-friends .activity-detail {
+    .h_xs;
+}
+
+.list-friends > li .btn {
+    .h_xxs;
+    padding: 5px 10px;
+    margin-top: 5px;
+}
+
+.modal-social .modal-footer { margin-top: 0; }
+
+.list-friends .activity-detail .rating {
+    .ibfix;
+    margin-right: 8px;
+    font-size: .8em;
+}
+
+.btn-grouporder {
+    opacity: 0;
+}
+
+.group-list {
+    padding: 0;
+    list-style-type: none;
+}
+
+.group-list > li {
+    .ibfix;
+}
+
+.quick-invite .col-md-5 {
+    padding-left: 0;
+}
+
+.quick-invite .col-md-5 .btn {
+    margin-bottom: 10px;
+}
+
+.quick-invite .col-md-7 {
+    padding: 0;
+}
+
+.quick-invite .col-md-7 .form-error {
+    margin-top: 20px;
+}
+
+
+
+
+.grid-friends {
+    #gradient > .vertical(#fefefe, #fdfdfd);
+    .border-radius(3px);
+    display: table;
+    padding: 8px 0;
+}
+
+
+.grid-friends > li {
+    .backfacefix;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    position: relative;
+}
+
+.grid-friends > li img {
+    .transition( all .15s ease-in-out );
+}
+
+.grid-friends > li a:hover img { opacity: .5;}
+
+
+
+/* --------------------------
+Group Orders
+-------------------------- */
+.active-group-order {
+    background: rgba(255,255,255,.5);
+}
+
+.group-order-preview {
+    padding: 20px 0;
+}
+
+.active-group-order .group-merchant {
+    color: @quick_row !important;
+}
+
+
+/* --------------------------
+Quick Widgets
+-------------------------- */
+.quick-history h1 {
+    margin-bottom: 0;
+}
+
+.quick-history .result {
+    padding-bottom: 0;
+}
+
+.section-head .fav i {
+    font-size: .6em !important;
+    text-shadow: none;
+    color: @headline_main_color;
+    position: relative;
+    top: -3px;
+    margin-right: 5px;
+}
+
+
+
+
+
+
+/* --------------------------
+Responsive
+-------------------------- */
+@media (max-width: 1000px) {
+    .owl-prev,
+    .owl-next {
+        top: 40%;
+    }
+}
+
+@media (max-width: 991px) {
+    .carousel .item .col-md-5,
+    .carousel .item .col-md-7 {
+        padding: 15px;
+    }
+
+
+}
+
+@media (max-width: 767px) {
+    .home .masthead {
+        min-height: 450px;
+    }
+
+    .pref-method {
+        margin-top: 10px;
+    }
+
+    .finder .col-sm-9,
+    .finder .col-sm-3 {
+        padding: 0;
+        float: left;
+    }
+
+    .finder .col-sm-9 { width: 70%; padding-right: 10px; }
+    .finder .col-sm-3 { width: 30%; }
+
+    .search-options .col-sm-6 { width: 45%; padding-right: 10px; float: left; }
+    .search-options .col-sm-3 { width: 20%; }
+
+    .search-options .form-inline .checkbox {
+        .ibfix;
+        margin: 0;
+        margin-top: 8px;
+    }
+}
+
+@media (max-width: 600px) {
+    .masthead .btn-pill {
+        padding: 15px 25px;
+    }
+
+    .why-foodtoeat .col-sm-4 { margin-bottom: 25px; }
+ 
+    .owl-prev,
+    .owl-next {
+        top: 35%;
+    }
+
+    .list-friends { max-height: inherit !important; }
+}
+
+@media (max-width: 480px) {
+    .search-options .col-sm-6 { width: 100%; padding-right: 0; float: none; }
+    .search-options .col-sm-3 { width: 100%; text-align: center; margin: 15px 0;}
+
+    .search-options .form-inline .checkbox {
+        margin: 0 10px;
+        margin-top: 8px;
+    }
+
+    .keyword-results {
+        min-width: 300px;
+    }
+}
+
+
+

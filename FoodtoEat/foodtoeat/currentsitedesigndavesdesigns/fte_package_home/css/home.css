@@ -1,0 +1,485 @@
+/* ===============================
+LESS Vars + Mixins
+=============================== */
+.ibfix {
+  /* fix inline-block issue for ie & moz */
+
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  /* solution via: http://foohack.com/2007/11/cross-browser-support-for-inline-block-styling/ */
+
+}
+.backfacefix {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+}
+/* --------------------------
+LESS Variables
+-------------------------- */
+/* btn colors */
+/* masthead colors */
+/* type colors */
+/* element colors */
+/* font families */
+/* ===============================
+LESS Vars + Mixins
+=============================== */
+.ibfix {
+  /* fix inline-block issue for ie & moz */
+
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  /* solution via: http://foohack.com/2007/11/cross-browser-support-for-inline-block-styling/ */
+
+}
+.backfacefix {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+}
+/* --------------------------
+LESS Variables
+-------------------------- */
+/* btn colors */
+/* masthead colors */
+/* type colors */
+/* element colors */
+/* font families */
+body {
+  font-family: 'PT Sans';
+  font-size: 16px;
+}
+h1 {
+  color: #8dad99;
+  font-family: 'Varela';
+}
+h2 {
+  margin-top: 0;
+  color: #597b66;
+  font-family: 'Varela';
+}
+h3 {
+  margin-top: 0;
+}
+h4 {
+  margin-top: 0;
+  color: #8dad99;
+  font-family: 'Varela';
+}
+.h_xxl {
+  font-size: 2.8em;
+}
+.h_xl {
+  font-size: 2.23em;
+}
+.h_lg {
+  font-size: 1.8em;
+  margin-bottom: .5em;
+}
+.h_md {
+  font-size: 1.4em;
+}
+.h_sm {
+  font-size: 1.2em;
+}
+.h_xs {
+  font-size: 1em;
+}
+.h_xxs {
+  font-size: .8em;
+}
+.h_xxxs {
+  font-size: .65em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+}
+blockquote,
+h5,
+h6,
+iframe,
+label,
+p,
+pre,
+address,
+td,
+th,
+ul,
+ol,
+dl,
+dd,
+hr,
+table {
+  margin: 0;
+}
+small {
+  margin-top: 0;
+}
+p {
+  color: #53483d;
+}
+/* --------------------------
+Masthead
+-------------------------- */
+.home .masthead {
+  min-height: 400px;
+}
+/* --------------------------
+Content - Guest
+-------------------------- */
+.why-foodtoeat {
+  background: #fefcf8;
+  padding: 25px;
+  text-align: center;
+}
+.btn-why-foodtoeat {
+  margin: -60px 0 50px 0;
+  border: 3px solid #df3736;
+  padding: 15px 20px 15px 10px;
+}
+.btn-why-foodtoeat:hover {
+  border: 3px solid #ed8f8e;
+  background: #fff;
+}
+.btn-why-foodtoeat i {
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  color: #fff691;
+  background: #df3736;
+  padding: 7px 8px;
+  text-align: center;
+}
+.btn-why-foodtoeat i:before {
+  margin: 0;
+}
+.why-foodtoeat .col-sm-4 img {
+  margin-bottom: 10px;
+}
+.popular-by-you .section-head {
+  padding: 20px 0;
+}
+/* --------------------------
+Follow / Friends
+-------------------------- */
+.quick-friends {
+  background: #ffe289;
+  padding-bottom: 30px;
+}
+.quick-friends h2 {
+  color: #bc8e00;
+}
+.quick-friends .well {
+  min-height: 130px;
+  background: #fafafa;
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid #ffd860;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.quick-friends .well .btn {
+  margin-top: 10px;
+  font-weight: normal;
+}
+.list-friends,
+.grid-friends {
+  padding: 0;
+  list-style-type: none;
+  min-width: 100%;
+}
+.list-friends {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  max-height: 268px;
+  overflow: auto;
+}
+.list-friends > li {
+  background-color: #fdfdfd;
+  background-repeat: repeat-x;
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#fefefe), to(#fdfdfd));
+  /* Konqueror */
+
+  background-image: -moz-linear-gradient(#fefefe, #fdfdfd);
+  /* FF 3.6+ */
+
+  background-image: -ms-linear-gradient(#fefefe, #fdfdfd);
+  /* IE10 */
+
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fefefe), color-stop(100%, #fdfdfd));
+  /* Safari 4+, Chrome 2+ */
+
+  background-image: -webkit-linear-gradient(#fefefe, #fdfdfd);
+  /* Safari 5.1+, Chrome 10+ */
+
+  background-image: -o-linear-gradient(#fefefe, #fdfdfd);
+  /* Opera 11.10 */
+
+  background-image: -ms-linear-gradient(top, #fefefe 0%, #fdfdfd 100%);
+  /* IE10+ */
+
+  background-image: linear-gradient(#fefefe, #fdfdfd);
+  /* the standard */
+
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  padding: 10px;
+  position: relative;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #f0f0f0;
+  text-decoration: none;
+}
+.list-friends > li:hover {
+  background: #eefbfa;
+  border-top: 1px solid #f6fffe;
+  border-bottom: 1px solid #e6f4f3;
+}
+.list-friends > li:hover .btn-grouporder,
+.row-merchants .item:hover .btn-grouporder {
+  opacity: 1;
+}
+.list-friends .col-xs-2 {
+  padding: 0;
+}
+.list-friends h4 {
+  color: #12a89f;
+  font-size: 'Open Sans';
+  margin-bottom: 0;
+}
+.list-friends .btn-grouporder {
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+.list-friends .activity-detail {
+  font-size: 1em;
+}
+.list-friends > li .btn {
+  font-size: .8em;
+  padding: 5px 10px;
+  margin-top: 5px;
+}
+.modal-social .modal-footer {
+  margin-top: 0;
+}
+.list-friends .activity-detail .rating {
+  /* fix inline-block issue for ie & moz */
+
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  /* solution via: http://foohack.com/2007/11/cross-browser-support-for-inline-block-styling/ */
+
+  margin-right: 8px;
+  font-size: .8em;
+}
+.btn-grouporder {
+  opacity: 0;
+}
+.group-list {
+  padding: 0;
+  list-style-type: none;
+}
+.group-list > li {
+  /* fix inline-block issue for ie & moz */
+
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  /* solution via: http://foohack.com/2007/11/cross-browser-support-for-inline-block-styling/ */
+
+}
+.quick-invite .col-md-5 {
+  padding-left: 0;
+}
+.quick-invite .col-md-5 .btn {
+  margin-bottom: 10px;
+}
+.quick-invite .col-md-7 {
+  padding: 0;
+}
+.quick-invite .col-md-7 .form-error {
+  margin-top: 20px;
+}
+.grid-friends {
+  background-color: #fdfdfd;
+  background-repeat: repeat-x;
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#fefefe), to(#fdfdfd));
+  /* Konqueror */
+
+  background-image: -moz-linear-gradient(#fefefe, #fdfdfd);
+  /* FF 3.6+ */
+
+  background-image: -ms-linear-gradient(#fefefe, #fdfdfd);
+  /* IE10 */
+
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fefefe), color-stop(100%, #fdfdfd));
+  /* Safari 4+, Chrome 2+ */
+
+  background-image: -webkit-linear-gradient(#fefefe, #fdfdfd);
+  /* Safari 5.1+, Chrome 10+ */
+
+  background-image: -o-linear-gradient(#fefefe, #fdfdfd);
+  /* Opera 11.10 */
+
+  background-image: -ms-linear-gradient(top, #fefefe 0%, #fdfdfd 100%);
+  /* IE10+ */
+
+  background-image: linear-gradient(#fefefe, #fdfdfd);
+  /* the standard */
+
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  display: table;
+  padding: 8px 0;
+}
+.grid-friends > li {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  position: relative;
+}
+.grid-friends > li img {
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+.grid-friends > li a:hover img {
+  opacity: .5;
+}
+/* --------------------------
+Group Orders
+-------------------------- */
+.active-group-order {
+  background: rgba(255, 255, 255, 0.5);
+}
+.group-order-preview {
+  padding: 20px 0;
+}
+.active-group-order .group-merchant {
+  color: #ffe289 !important;
+}
+/* --------------------------
+Quick Widgets
+-------------------------- */
+.quick-history h1 {
+  margin-bottom: 0;
+}
+.quick-history .result {
+  padding-bottom: 0;
+}
+.section-head .fav i {
+  font-size: .6em !important;
+  text-shadow: none;
+  color: #8dad99;
+  position: relative;
+  top: -3px;
+  margin-right: 5px;
+}
+/* --------------------------
+Responsive
+-------------------------- */
+@media (max-width: 1000px) {
+  .owl-prev,
+  .owl-next {
+    top: 40%;
+  }
+}
+@media (max-width: 991px) {
+  .carousel .item .col-md-5,
+  .carousel .item .col-md-7 {
+    padding: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .home .masthead {
+    min-height: 450px;
+  }
+  .pref-method {
+    margin-top: 10px;
+  }
+  .finder .col-sm-9,
+  .finder .col-sm-3 {
+    padding: 0;
+    float: left;
+  }
+  .finder .col-sm-9 {
+    width: 70%;
+    padding-right: 10px;
+  }
+  .finder .col-sm-3 {
+    width: 30%;
+  }
+  .search-options .col-sm-6 {
+    width: 45%;
+    padding-right: 10px;
+    float: left;
+  }
+  .search-options .col-sm-3 {
+    width: 20%;
+  }
+  .search-options .form-inline .checkbox {
+    /* fix inline-block issue for ie & moz */
+  
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    /* solution via: http://foohack.com/2007/11/cross-browser-support-for-inline-block-styling/ */
+  
+    margin: 0;
+    margin-top: 8px;
+  }
+}
+@media (max-width: 600px) {
+  .masthead .btn-pill {
+    padding: 15px 25px;
+  }
+  .why-foodtoeat .col-sm-4 {
+    margin-bottom: 25px;
+  }
+  .owl-prev,
+  .owl-next {
+    top: 35%;
+  }
+  .list-friends {
+    max-height: inherit !important;
+  }
+}
+@media (max-width: 480px) {
+  .search-options .col-sm-6 {
+    width: 100%;
+    padding-right: 0;
+    float: none;
+  }
+  .search-options .col-sm-3 {
+    width: 100%;
+    text-align: center;
+    margin: 15px 0;
+  }
+  .search-options .form-inline .checkbox {
+    margin: 0 10px;
+    margin-top: 8px;
+  }
+  .keyword-results {
+    min-width: 300px;
+  }
+}

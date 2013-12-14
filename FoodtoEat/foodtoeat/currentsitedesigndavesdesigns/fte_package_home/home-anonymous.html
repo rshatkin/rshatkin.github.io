@@ -1,0 +1,638 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="ico/favicon.png">
+
+    <title>FoodtoEat // Home - Guest</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
+    <link href="css/owl.css" rel="stylesheet">
+
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic|Fredoka+One|Varela' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/foodtoeat_icons.css">
+    <link rel="stylesheet" href="css/animation.css"><!--[if IE 7]>
+    <link rel="stylesheet" href="css/foodtoeat_icons-ie7.css"><![endif]-->
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body class="home">
+    <div id="st-container" class="st-container">
+
+        <section class="st-menu st-reveal">
+            <form role="form">
+                <div class="form-group form-intro">
+                    <a class="st-close"><i class="icon-cancel-circled-1"></i></a>
+
+                    <h4>FoodtoEat gets even better when you have an account.</h4>
+                    <p>
+                        Easily access recent orders, save your favorite places and make eating and ordering more social!
+                    </p>
+                </div>
+                <div class="form-group radio-group">
+                    <div class="radio">
+                        <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                        I have a FoodtoEat account.
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                        I want to create a new account.
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group field-group form-padded">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email">
+
+                    <label for="pw" class="pull-left">Password</label>
+                    <a href="" class="link-forgot-pw pull-right">Forgot password?</a>
+                    <div class="clearfix"></div>
+                    <input type="password" class="form-control" id="pw" placeholder="Password">
+
+                    <button type="submit" class="btn btn-submit">Log in</button>
+                </div>
+
+
+            </form>
+        </section>
+
+        <!-- content push wrapper -->
+        <div class="st-pusher">
+            <div class="st-content">
+                <div class="st-content-inner">
+
+                    <div class="main clearfix">
+                        <div class="logo"><a href="#"><img src="img/logo-foodtoeat.png" alt="FoodtoEat"></a></div>
+                        <div id="masthead" class="masthead row">
+                            <nav class="navbar navbar-default" role="navigation">
+                                <!-- Brand and toggle get grouped for better mobile display -->
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                                        <span class="sr-only">Menu</span>
+                                        <i class="icon-menu"></i>
+                                    </button>
+                                </div>
+
+                                <!-- Collect the nav links, forms, and other content for toggling -->
+                                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                                    <ul class="nav navbar-nav navbar-left">
+                                        <li class="active"><a href="#">Home</a></li>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Blog</a></li>
+                                        <li><a href="#">Merchants</a></li>
+                                    </ul>
+
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <li><a href="#" class="btn btn-fb btn-primary"><i class="icon-facebook"></i> Connect</a></li>
+                                        <li class="column st-trigger-effects">
+                                            <a class="btn btn-login btn-st btn-default" data-effect="st-reveal">Login <em>or</em> Signup</a>
+                                        </li>
+
+                                    </ul>
+                                </div><!-- /.navbar-collapse -->
+                            </nav>
+
+
+
+                            <div class="row home-search">
+                                <div class="col-md-8 col-md-offset-2 text-center">
+                                    <div class="btn-group pref-method">
+                                      <button type="button" class="btn btn-lg btn-pill btn-default active">Delivery</button>
+                                      <button type="button" class="btn btn-lg btn-pill btn-default">Pick-up</button>
+                                      <button type="button" class="btn btn-lg btn-pill btn-default">Catering</button>
+                                    </div>
+                                    <input type="hidden" id="buttonvalue"/>
+                                </div>
+
+                                <div class="finder col-sm-12 col-md-6 col-md-offset-3">
+                                    <div class="row">
+                                        <div class="search-address col-sm-9">
+                                            <div class="btn-group btn-recentloc">
+                                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                                Recent <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu" role="menu">
+                                                    <li><a href="#">123 Broadway, NY NY</a></li>
+                                                    <li><a href="#">12 Ave. of Americas NY</a></li>
+                                                    <li><a href="#">5 Rector St. NY</a></li>
+                                                    <li class="divider"></li>
+                                                    <li><a href="#">Clear recent locations</a></li>
+                                                </ul>
+                                            </div>
+
+                                            <input type="text" class="form-control input-lg" placeholder="Address, City, State or Zip" value="72 Madison Ave"></div>
+                                        <div class="search-btn col-sm-3"><button class="btn btn-action btn-lg">Search</button></div>
+                                    </div>
+
+                                    <div class="row search-options input-dark">
+                                        <div id="keywords" class="keywords col-sm-6">
+                                            <input type="text" class="form-control input-dark input-md" placeholder="What are you in the mood for? (sushi, pasta, italian)">
+                                        </div>
+
+                                        <div class="col-sm-3 form-inline">
+                                            <div class="checkbox">
+                                                <label data-toggle="tooltip" title="Include Food trucks - Choose pick-up for more results as most trucks don't deliver." class="tooltips"><input type="checkbox" checked> <i class="icon-truck"></i></label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label data-toggle="tooltip" title="Include Restaurants" class="tooltips"><input type="checkbox" checked> <i class="icon-food"></i></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- /masthead -->
+
+                        <section id="why-overview" class="why-foodtoeat row">
+                            <a href="#why-overview"class="btn btn-xl btn-default btn-pill btn-why-foodtoeat">
+                               <i class="icon-down-open"></i> Why choose FoodtoEat?
+                            </a>
+                            <div class="container">
+                                <div class="col-sm-4">
+                                    <h2 class="h_lg">Sustainability</h2>
+                                    <img src="img/temp-merchant-logo.png" alt="" class="img-responsive">
+                                    <p>You’re sustaining a business in a positive way with each FoodtoEat order. We only charge 10 cents an order while up to 20% is being taken by our competitors.<br><a href="">View infograph</a>
+                                    </p>
+                                    <p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <h2 class="h_lg">Promos</h2>
+                                    <img src="img/temp-merchant-logo.png" alt="" class="img-responsive">
+                                    <p>From the savings the restaurants are getting, discounts then trickle down to you. Get special discounts from our vendors only on FoodtoEat. </p>
+                                    <p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <h2 class="h_lg">Social Features</h2>
+                                    <img src="img/temp-merchant-logo.png" alt="" class="img-responsive">
+                                    <p>Split checks and share delicious dishes with your friends with our follow/following feature.</p>
+                                    <p>
+                                </div>
+                            </div>
+                        </section><!-- /why-foodtoeat -->
+
+
+                        <section id="fte-carousel" class="carousel row">
+                            <div class="item container">
+                                <h1 class="h_lg text-center col-md-12">Why stand in line when you can order online?</h1>
+
+                                <div class="col-md-5">
+                                    <img src="img/temp-merchant-logo.png" alt="" class="img-responsive">
+                                </div>
+
+                                <div class="col-md-7">
+                                    <h4>We’re the first to incorporate food trucks with online ordering.</h4>
+                                    <p>
+                                        It’s a marriage that was always meant to be - just took us some time to get our wits together.
+
+                                        Short on time? You can go online, find a truck’s location closest to your address, order, skip the line, and pick up. Yeah, we know this is super cool.
+                                    </p>
+
+                                    <a href="" class="btn btn-default btn-carousel">View the food truck map</a>
+                                </div>
+                            </div>
+
+                            <div class="item container">
+                                <h1 class="h_lg text-center col-md-12">Our corporate accounts make it easier to feed your entire team.</h1>
+
+                                <div class="col-md-5">
+                                    <img src="img/temp-merchant-logo.png" alt="" class="img-responsive">
+                                </div>
+
+                                <div class="col-md-7">
+                                    <h4>Because you and your coworkers deserve better.</h4>
+                                    <p>
+                                        We all LOVE when our company throws us catered meals and takes care of our lunch and dinners. Get your business onboard to get hooked up with the latest up and coming vendors and food trucks. You can order online or use our concierge catering service.
+                                    </p>
+                                    <a href="" class="btn btn-default btn-carousel">Learn more about concierge service</a>
+                                </div>
+                            </div>
+
+                            <div class="item container">
+                                <h1 class="h_lg text-center col-md-12">Keep up with the freshest news on all things food.</h1>
+
+                                <div class="col-md-5">
+                                    <img src="img/temp-merchant-logo.png" alt="" class="img-responsive">
+                                </div>
+
+                                <div class="col-md-7">
+                                    <h4>Check out our blog and join us on our food journey!</h4>
+                                    <p>
+                                        Are you a true foodie that needs the latest on the most popular dish or exciting news within the food world? Better yet, need a good recommendation for a place to try out? Check out our exciting blog – you’ll find an evergrowing list of our foodie experiences, interviews, and news!
+                                    </p>
+
+                                    <a href="http://dailyfoodtoeat.tumblr.com" class="btn btn-default btn-carousel">Visit our blog</a>
+                                </div>
+                            </div>
+                        </section><!-- /carousel-difference -->
+
+
+                        <section class="popular-by-you row">
+                            <header class="section-head text-center">
+                                <h1 class="h_xl">Popular choices around Jersey City</h1>
+                                <a href="#masthead">Not in Jersey City? Help us locate you.</a>
+                            </header>
+
+
+                            <ul class="result-grid container">
+                                <li class="result col-sm-6 col-md-3">
+
+                                    <div class="merchant">
+                                        <div class="discount"><span class="percent">10<sup>%</sup></span><span class="p-off">OFF</span></div>
+                                        <a href="" class="link-merchant">
+                                            <img src="img/temp-merchant-logo.png" alt="">
+                                            <span>Merchant Name</span>
+                                        </a>
+                                        <ul class="rating pull-left">
+                                            <li class="star-on"><i class="icon-star-1"></i></li>
+                                            <li class="star-on"><i class="icon-star-1"></i></li>
+                                            <li class="star-on"><i class="icon-star-1"></i></li>
+                                            <li class="star-off"><i class="icon-star-1"></i></li>
+                                            <li class="star-off"><i class="icon-star-1"></i></li>
+                                        </ul>
+
+                                        <div class="pricing pull-right">$$$$</div>
+                                        <div class="clearfix"></div>
+
+                                        <address>
+                                            123 American Ave. Hudson NJ 01234
+                                        </address>
+
+                                        <hr>
+
+                                        <ul class="tags pull-left">
+                                            <li><a href="">Cuisine</a></li>
+                                            <li><a href="">Cuisine</a></li>
+                                            <li><a href="">Cuisine</a></li>
+                                            <li class="ellipses"><a href="">...</a></li>
+                                        </ul>
+
+                                        <a href="" class="fav fav-on pull-right"><i class="icon-heart-1"></i></a>
+                                        <div class="clearfix"></div>
+
+                                    </div>
+                                </li>
+
+                                <li class="result col-sm-6 col-md-3">
+                                    <div class="merchant">
+                                        <a href="" class="link-merchant">
+                                            <img src="img/temp-merchant-logo.png" alt="">
+                                            <span>Merchant Name</span>
+                                        </a>
+                                        <ul class="rating pull-left">
+                                            <li class="star-on"><i class="icon-star-1"></i></li>
+                                            <li class="star-on"><i class="icon-star-1"></i></li>
+                                            <li class="star-on"><i class="icon-star-1"></i></li>
+                                            <li class="star-off"><i class="icon-star-1"></i></li>
+                                            <li class="star-off"><i class="icon-star-1"></i></li>
+                                        </ul>
+
+                                        <div class="pricing pull-right">$$$$</div>
+                                        <div class="clearfix"></div>
+
+                                        <address>
+                                            123 American Ave. Hudson NJ 01234
+                                        </address>
+
+                                        <hr>
+
+                                        <ul class="tags pull-left">
+                                            <li><a href="">Cuisine</a></li>
+                                            <li><a href="">Cuisine</a></li>
+                                            <li><a href="">Cuisine</a></li>
+                                            <li class="ellipses"><a href="">...</a></li>
+                                        </ul>
+
+                                        <a href="" class="fav fav-off pull-right"><i class="icon-heart-1"></i></a>
+                                        <div class="clearfix"></div>
+
+                                    </div>
+                                </li>
+
+                                <li class="result col-sm-6 col-md-3">
+                                    <div class="merchant">
+                                        <a href="" class="link-merchant">
+                                            <img src="img/temp-merchant-logo.png" alt="">
+                                            <span>Merchant Name</span>
+                                        </a>
+                                        <ul class="rating pull-left">
+                                            <li class="star-on"><i class="icon-star-1"></i></li>
+                                            <li class="star-on"><i class="icon-star-1"></i></li>
+                                            <li class="star-on"><i class="icon-star-1"></i></li>
+                                            <li class="star-off"><i class="icon-star-1"></i></li>
+                                            <li class="star-off"><i class="icon-star-1"></i></li>
+                                        </ul>
+
+                                        <div class="pricing pull-right">$$$$</div>
+                                        <div class="clearfix"></div>
+
+                                        <address>
+                                            123 American Ave. Hudson NJ 01234
+                                        </address>
+
+                                        <hr>
+
+                                        <ul class="tags pull-left">
+                                            <li><a href="">Cuisine</a></li>
+                                            <li><a href="">Cuisine</a></li>
+                                            <li><a href="">Cuisine</a></li>
+                                            <li class="ellipses"><a href="">...</a></li>
+                                        </ul>
+
+                                        <a href="" class="fav fav-off pull-right"><i class="icon-heart-1"></i></a>
+                                        <div class="clearfix"></div>
+
+                                    </div>
+                                </li>
+
+                                <li class="result col-sm-6 col-md-3">
+                                    <div class="merchant">
+                                        <a href="" class="link-merchant">
+                                            <img src="img/temp-merchant-logo.png" alt="">
+                                            <span>Merchant Name</span>
+                                        </a>
+                                        <ul class="rating pull-left">
+                                            <li class="star-on"><i class="icon-star-1"></i></li>
+                                            <li class="star-on"><i class="icon-star-1"></i></li>
+                                            <li class="star-on"><i class="icon-star-1"></i></li>
+                                            <li class="star-off"><i class="icon-star-1"></i></li>
+                                            <li class="star-off"><i class="icon-star-1"></i></li>
+                                        </ul>
+
+                                        <div class="pricing pull-right">$$$$</div>
+                                        <div class="clearfix"></div>
+
+                                        <address>
+                                            123 American Ave. Hudson NJ 01234
+                                        </address>
+
+                                        <hr>
+
+                                        <ul class="tags pull-left">
+                                            <li><a href="">Cuisine</a></li>
+                                            <li><a href="">Cuisine</a></li>
+                                            <li><a href="">Cuisine</a></li>
+                                            <li class="ellipses"><a href="">...</a></li>
+                                        </ul>
+
+                                        <a href="" class="fav fav-off pull-right"><i class="icon-heart-1"></i></a>
+                                        <div class="clearfix"></div>
+
+                                    </div>
+                                </li>
+
+                                <li class="result col-sm-6 col-md-3">
+                                    <div class="merchant">
+                                        <a href="" class="link-merchant">
+                                            <img src="img/temp-merchant-logo.png" alt="">
+                                            <span>Merchant Name</span>
+                                        </a>
+                                        <ul class="rating pull-left">
+                                            <li class="star-on"><i class="icon-star-1"></i></li>
+                                            <li class="star-on"><i class="icon-star-1"></i></li>
+                                            <li class="star-on"><i class="icon-star-1"></i></li>
+                                            <li class="star-off"><i class="icon-star-1"></i></li>
+                                            <li class="star-off"><i class="icon-star-1"></i></li>
+                                        </ul>
+
+                                        <div class="pricing pull-right">$$$$</div>
+                                        <div class="clearfix"></div>
+
+                                        <address>
+                                            123 American Ave. Hudson NJ 01234
+                                        </address>
+
+                                        <hr>
+
+                                        <ul class="tags pull-left">
+                                            <li><a href="">Cuisine</a></li>
+                                            <li><a href="">Cuisine</a></li>
+                                            <li><a href="">Cuisine</a></li>
+                                            <li class="ellipses"><a href="">...</a></li>
+                                        </ul>
+
+                                        <a href="" class="fav fav-off pull-right"><i class="icon-heart-1"></i></a>
+                                        <div class="clearfix"></div>
+
+                                    </div>
+                                </li>
+
+                                <li class="result col-sm-6 col-md-3">
+                                    <div class="merchant">
+                                        <a href="" class="link-merchant">
+                                            <img src="img/temp-merchant-logo.png" alt="">
+                                            <span>Merchant Name</span>
+                                        </a>
+                                        <ul class="rating pull-left">
+                                            <li class="star-on"><i class="icon-star-1"></i></li>
+                                            <li class="star-on"><i class="icon-star-1"></i></li>
+                                            <li class="star-on"><i class="icon-star-1"></i></li>
+                                            <li class="star-off"><i class="icon-star-1"></i></li>
+                                            <li class="star-off"><i class="icon-star-1"></i></li>
+                                        </ul>
+
+                                        <div class="pricing pull-right">$$$$</div>
+                                        <div class="clearfix"></div>
+
+                                        <address>
+                                            123 American Ave. Hudson NJ 01234
+                                        </address>
+
+                                        <hr>
+
+                                        <ul class="tags pull-left">
+                                            <li><a href="">Cuisine</a></li>
+                                            <li><a href="">Cuisine</a></li>
+                                            <li><a href="">Cuisine</a></li>
+                                            <li class="ellipses"><a href="">...</a></li>
+                                        </ul>
+
+                                        <a href="" class="fav fav-off pull-right"><i class="icon-heart-1"></i></a>
+                                        <div class="clearfix"></div>
+
+                                    </div>
+                                </li>
+
+                                <li class="result col-sm-6 col-md-3">
+
+                                    <div class="merchant">
+                                        <div class="discount"><span class="percent">5<sup>%</sup></span><span class="p-off">OFF</span></div>
+
+                                        <a href="" class="link-merchant">
+                                            <img src="img/temp-merchant-logo.png" alt="">
+                                            <span>Merchant Name</span>
+                                        </a>
+                                        <ul class="rating pull-left">
+                                            <li class="star-on"><i class="icon-star-1"></i></li>
+                                            <li class="star-on"><i class="icon-star-1"></i></li>
+                                            <li class="star-on"><i class="icon-star-1"></i></li>
+                                            <li class="star-off"><i class="icon-star-1"></i></li>
+                                            <li class="star-off"><i class="icon-star-1"></i></li>
+                                        </ul>
+
+                                        <div class="pricing pull-right">$$$$</div>
+                                        <div class="clearfix"></div>
+
+                                        <address>
+                                            123 American Ave. Hudson NJ 01234
+                                        </address>
+
+                                        <hr>
+
+                                        <ul class="tags pull-left">
+                                            <li><a href="">Cuisine</a></li>
+                                            <li><a href="">Cuisine</a></li>
+                                            <li><a href="">Cuisine</a></li>
+                                            <li class="ellipses"><a href="">...</a></li>
+                                        </ul>
+
+                                        <a href="" class="fav fav-off pull-right"><i class="icon-heart-1"></i></a>
+                                        <div class="clearfix"></div>
+
+                                    </div>
+                                </li>
+
+                                <li class="result col-sm-6 col-md-3">
+                                    <div class="merchant">
+                                        <a href="" class="link-merchant">
+                                            <img src="img/temp-merchant-logo.png" alt="">
+                                            <span>Merchant Name</span>
+                                        </a>
+                                        <ul class="rating pull-left">
+                                            <li class="star-on"><i class="icon-star-1"></i></li>
+                                            <li class="star-on"><i class="icon-star-1"></i></li>
+                                            <li class="star-on"><i class="icon-star-1"></i></li>
+                                            <li class="star-off"><i class="icon-star-1"></i></li>
+                                            <li class="star-off"><i class="icon-star-1"></i></li>
+                                        </ul>
+
+                                        <div class="pricing pull-right">$$$$</div>
+                                        <div class="clearfix"></div>
+
+                                        <address>
+                                            123 American Ave. Hudson NJ 01234
+                                        </address>
+
+                                        <hr>
+
+                                        <ul class="tags pull-left">
+                                            <li><a href="">Cuisine</a></li>
+                                            <li><a href="">Cuisine</a></li>
+                                            <li><a href="">Cuisine</a></li>
+                                            <li class="ellipses"><a href="">...</a></li>
+                                        </ul>
+
+                                        <a href="" class="fav fav-off pull-right"><i class="icon-heart-1"></i></a>
+                                        <div class="clearfix"></div>
+
+                                    </div>
+                                </li>
+                            </ul>
+                        </section><!-- /popular-by-you -->
+
+                        <section class="follow-foodtoeat row">
+                            <span>Dont’ be a stranger! Follow us on</span>
+                            <a href=""><i class="icon-facebook"></i></a>
+                            <a href=""><i class="icon-twitter"></i></a>
+                            <a href=""><i class="icon-gplus"></i></a>
+                            <a href=""><i class="icon-instagram"></i></a>
+                        </section>
+
+                        <footer class="footer row">
+                            <div class="container">
+                                <div class="col-xs-4 col-sm-3">
+                                    <header class="section-head">
+                                        <h4 class="h_md">Company</h4>
+                                        <ul class="foot-links">
+                                            <li><a href="">About Us</a></li>
+                                            <li><a href="">Corporate Solutions</a></li>
+                                            <li><a href="">Careers</a></li>
+                                            <li><a href="">Blog</a></li>
+                                        </ul>
+                                    </header>
+                                </div>
+                                <div class="col-xs-4 col-sm-3">
+                                    <header class="section-head">
+                                        <h4 class="h_md">Support</h4>
+                                        <ul class="foot-links">
+                                            <li><a href="">Merchants</a></li>
+                                            <li><a href="">Contact Us</a></li>
+                                            <li><a href="">FAQs</a></li>
+                                        </ul>
+                                    </header>
+                                </div>
+                                <div class="col-xs-4 col-sm-3">
+                                    <header class="section-head">
+                                        <h4 class="h_md">Social</h4>
+                                        <ul class="foot-links">
+                                            <li><a href="">Facebook</a></li>
+                                            <li><a href="">Twitter</a></li>
+                                            <li><a href="">Google+</a></li>
+                                            <li><a href="">Instagram</a></li>
+                                        </ul>
+                                    </header>
+                                </div>
+                                
+                                <div class="visible-xs clearfix"></div>
+
+                                <div class="col-sm-3">
+                                    <div class="signoff">
+                                        <a href="#"><img src="img/logo-foodtoeat.png" class="logo pull-right" alt="FoodtoEat"></a>
+                                        <div class="clearfix"></div>
+                                        <a href="" class="links-legal">Terms of Use</a> <a href="" class="links-legal">Privacy Policy</a>
+                                        <p class="copyright">&copy; FoodtoEat.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </footer>
+
+
+                    </div><!-- /main -->
+                </div><!-- /st-content-inner -->
+            </div><!-- /st-content -->
+        </div><!-- /st-pusher -->
+    </div><!-- /st-container -->
+
+
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/sidebarEffects.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            //BS3 tooltips
+            $('.tooltips').tooltip();
+
+            //masthead bg image
+            $("#masthead").backstretch("http://lorempixel.com/1024/768/food", {speed: 500});
+
+            //load slider
+            $("#fte-carousel").owlCarousel({
+                pagination : true,
+                navigation: true,
+                navigationText: ['<i class="icon-angle-left"></i>','<i class="icon-angle-right"></i>'],
+                slideSpeed : 300,
+                paginationSpeed : 400,
+                singleItem:true
+            });
+        });
+    </script>
+  </body>
+</html>
